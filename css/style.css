@@ -18,3 +18,36 @@ body {
   line-height: 1;
   color: #333;
 }
+
+/* main container */
+.twitter-container {
+  width: 75vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25fr 75fr;
+  column-gap: 1.2rem;
+  margin: 0 auto;
+}
+
+.nav-section {
+  background-color: red;
+}
+
+.nav-side-header {
+  
+}
+
+.content-section {
+  background-color: green;
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  column-gap: 1.2rem;
+}
+
+.content-bar {
+  background-color: aqua;
+}
+
+.content-sidebar {
+  background-color: blue;
+}
