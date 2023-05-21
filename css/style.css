@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@1,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 
 *,
 *::after,
@@ -14,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Roboto" "Lato" "sans-serif";
+  font-family: "Lato" "sans-serif";
   line-height: 1;
   color: #333;
 }
@@ -24,30 +23,132 @@ body {
   width: 75vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 25fr 75fr;
+  grid-template-columns: 22fr 78fr;
   column-gap: 1.2rem;
   margin: 0 auto;
 }
 
 .nav-section {
-  background-color: red;
+  position: sticky;
+  border-right: 1px solid rgb(239, 232, 232);
+  padding-right: 1rem;
 }
 
 .nav-side-header {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
+.twitter-logo-box {
+  width: fit-content;
+  border-radius: 50%;
+}
+
+.twitter-logo-box:hover,
+.twitter-logo-box:active {
+  background-color: #f7f7f7;
+}
+
+.twitter__logo {
+  width: 6.4rem;
+  padding: 1.6rem;
+}
+
+/* ------------------ General css  start------------------------ */
+
+.label__general {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  display: inline;
+  margin-right: 2rem;
+  letter-spacing: 0.6px;
+}
+
+.general--box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  border-radius: 24px;
+}
+
+.nav-ele-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.nav-ele-link:hover .general--box,
+.nav-ele-link:active .general--box {
+  background-color: #ebebed;
+}
+
+.active-nav-ele-label--action {
+  font-weight: 900;
+}
+
+/* ------------------ General css end------------------------ */
+
+/* ----------- ele-home ----------- */
+
+/* ------------- ele-explore --------------*/
+
+/* ----------- ele-notification ----------- */
+
+/* ----------- ele-message ----------- */
+
+/* ----------- ele-list ----------- */
+
+/* ----------- ele-bookmarks ----------- */
+
+/* ----------- ele-twitter blue ----------- */
+
+/* ----------- ele-profile ----------- */
+
+/* ----------- ele-more ----------- */
+
+/* ------------- ele tweet btn ----------- */
+
+.nav-tweet-btn {
+  margin-top: 4rem;
+  text-decoration: none;
+  color: White;
+}
+
+.tweet-btn {
+  background-color: rgb(63, 121, 245);
+  padding: 2rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+  text-align: center;
+}
+
+.tweet-label {
+  font-family: "Loto";
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+
+
+/* content section */
+
 .content-section {
-  background-color: green;
   display: grid;
   grid-template-columns: 60fr 40fr;
-  column-gap: 1.2rem;
+  column-gap: 2.4rem;
 }
 
 .content-bar {
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .content-sidebar {
-  background-color: blue;
+  /* background-color: blue; */
 }
