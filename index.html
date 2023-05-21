@@ -11,18 +11,224 @@
   <body>
     <!-- main container -->
     <div class="twitter-container">
+      <!-- section nav -->
       <section class="nav-section">
         <div class="nav-side-header">
-        
+          <!-- ele-logo -->
+          <div class="twitter-logo-box">
+            <a href="#">
+              <svg
+                version="1.1"
+                class="twitter__logo"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 248 204"
+                style="enable-background: new 0 0 248 204"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #1d9bf0;
+                  }
+                </style>
+                <g id="Logo_1_">
+                  <path
+                    class="st0"
+                    d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
+                  C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
+                  c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
+                  c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
+                  c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
+                  c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- ele-home -->
+          <a href="#home" class="nav-ele-link active-nav-ele--action">
+            <div class="home-box general--box active-nav-ele-logo--action">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="home-logo logo"
+                stroke-width="1.6px"
+              >
+                <g>
+                  <path
+                    d="M12 1.696L.622 8.807l1.06 1.696L3 9.679V19.5C3 20.881 4.119 22 5.5 22h13c1.381 0 2.5-1.119 2.5-2.5V9.679l1.318.824 1.06-1.696L12 1.696zM12 16.5c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5z"
+                  ></path>
+                </g>
+              </svg>
+              <span
+                class="home__label active-nav-ele-label--action label__general"
+                >Home</span
+              >
+            </div>
+          </a>
+
+          <!-- ele explore -->
+          <a href="#explore" class="nav-ele-link">
+            <div class="explore-box general--box">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="explore-logo logo"
+              >
+                <g>
+                  <path
+                    d="M10.09 3.098L9.72 7h5.99l.39-4.089 1.99.187L17.72 7h3.78v2h-3.97l-.56 6h3.53v2h-3.72l-.38 4.089-1.99-.187.36-3.902H8.78l-.38 4.089-1.99-.187L6.77 17H2.5v-2h4.46l.56-6H3.5V7h4.21l.39-4.089 1.99.187zM14.96 15l.56-6H9.53l-.56 6h5.99z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="explore__label label__general">Explore</span>
+            </div>
+          </a>
+
+          <!--ele notification  -->
+          <a href="#notification" class="nav-ele-link">
+            <div class="notification-box general--box">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="notification-logo logo"
+              >
+                <g>
+                  <path
+                    d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="notification__label label__general"
+                >Notification</span
+              >
+            </div>
+          </a>
+
+          <!-- ele message -->
+          <a href="#message" class="nav-ele-link">
+            <div class="message-box general--box">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="message-logo logo"
+              >
+                <g>
+                  <path
+                    d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="message__label label__general">Message</span>
+            </div>
+          </a>
+
+          <!-- ele lists -->
+          <a href="#lists" class="nav-ele-link">
+            <div class="list-box general--box">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="lists-logo logo"
+                data-testid="icon"
+              >
+                <g>
+                  <path
+                    d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm-8 2h8v2H8v-2z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="lists__label label__general">Lists</span>
+            </div>
+          </a>
+          <!-- ele bookmarks -->
+          <a href="#bookmarks" class="nav-ele-link">
+            <div class="list-box general--box">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="bookmarks-logo logo"
+                data-testid="icon"
+              >
+                <g>
+                  <path
+                    d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="bookmarks__label label__general">Bookmarks</span>
+            </div>
+          </a>
+          <!-- ele twitter blue -->
+          <a href="#twitterblue" class="nav-ele-link">
+            <div class="twitterblue-box general--box">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="twitterblue-logo logo"
+              >
+                <g>
+                  <path
+                    d="M15.704 8.99c.457-.05.891-.17 1.296-.35-.302.45-.685.84-1.125 1.15.004.1.006.19.006.29 0 2.94-2.269 6.32-6.421 6.32-1.274 0-2.46-.37-3.459-1 .177.02.357.03.539.03 1.057 0 2.03-.35 2.803-.95-.988-.02-1.821-.66-2.109-1.54.138.03.28.04.425.04.206 0 .405-.03.595-.08-1.033-.2-1.811-1.1-1.811-2.18v-.03c.305.17.652.27 1.023.28-.606-.4-1.004-1.08-1.004-1.85 0-.4.111-.78.305-1.11 1.113 1.34 2.775 2.22 4.652 2.32-.038-.17-.058-.33-.058-.51 0-1.23 1.01-2.22 2.256-2.22.649 0 1.235.27 1.647.7.514-.1.997-.28 1.433-.54-.168.52-.526.96-.992 1.23zM2 21h15c3.038 0 5.5-2.46 5.5-5.5 0-1.4-.524-2.68-1.385-3.65-.08-.09-.089-.22-.023-.32.574-.87.908-1.91.908-3.03C22 5.46 19.538 3 16.5 3H2v18zM16.5 5C18.433 5 20 6.57 20 8.5c0 1.01-.43 1.93-1.12 2.57-.468.43-.414 1.19.111 1.55.914.63 1.509 1.69 1.509 2.88 0 1.93-1.567 3.5-3.5 3.5H4V5h12.5z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="twitterblue__label label__general"
+                >Twitter Blue</span
+              >
+            </div>
+          </a>
+          <!-- ele profile -->
+          <a href="#profile" class="nav-ele-link">
+            <div class="profile-box general--box">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="profile-logo logo"
+              >
+                <g>
+                  <path
+                    d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="profile__label label__general">Profile</span>
+            </div>
+          </a>
+          <!-- ele more -->
+          <a href="#more" class="nav-ele-link">
+            <div class="more-box general--box">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="more--logo logo"
+              >
+                <g>
+                  <path
+                    d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="more__label label__general">More</span>
+            </div>
+          </a>
+          <!-- ele tweet btn -->
+          <a href="#tweet" class="nav-tweet-btn">
+            <div class="tweet-btn">
+              <span class="tweet-label">Tweet</span>
+            </div>
+          </a>
         </div>
       </section>
+
+      <!-- content section -->
       <section class="content-section">
-        <div class="content-bar">
-
-        </div>
-        <div class="content-sidebar">
-
-        </div>
+        <div class="content-bar"></div>
+        <div class="content-sidebar"></div>
       </section>
     </div>
   </body>
