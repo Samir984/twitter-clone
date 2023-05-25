@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 *,
 *::after,
@@ -20,7 +20,7 @@ body {
 
 /* main container */
 .twitter-container {
-  width: 75vw;
+  width: 72vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 22fr 78fr;
@@ -82,7 +82,7 @@ body {
   color: inherit;
 }
 
-.logo {
+.icon {
   width: 3rem;
 }
 
@@ -92,6 +92,19 @@ body {
 }
 
 .active-nav-ele-label--action {
+  font-weight: 900;
+}
+
+.more-trends {
+  letter-spacing: 1px;
+  padding: 1rem;
+  color: #1da1f2;
+}
+
+.heading {
+  font-family: "Lato";
+  font-size: 2.4rem;
+  padding: 2rem;
   font-weight: 900;
 }
 
@@ -118,16 +131,18 @@ body {
 /* ------------- ele tweet btn ----------- */
 
 .nav-tweet-btn {
+  background-color: #1da1f2;
   margin-top: 4rem;
   text-decoration: none;
-  color: White;
-}
-
-.tweet-btn {
-  background-color: rgb(65, 146, 252);
-  padding: 2rem;
-  font-size: 2rem;
   border-radius: 3rem;
+  width: 90%;
+}
+.nav-tweet-btn:hover {
+  background-color: rgb(12, 137, 215);
+}
+.tweet-btn {
+  padding: 1.6rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -135,10 +150,12 @@ body {
   font-family: "Loto";
   font-size: 2.4rem;
   font-weight: 900;
+  color: White;
 }
 
 /*---------- ele login user info -------------------*/
 .login-user-info {
+  font-family: "Lato";
   margin-top: auto;
   display: flex;
   justify-content: space-evenly;
@@ -156,15 +173,15 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #abb3af;
+  overflow: hidden;
 }
 
 .user-pic {
   width: 5rem;
-  padding: 2px;
 }
 
-.login-user-detail {
+.login-user-detail,
+.user-detail {
   display: flex;
   flex-direction: column;
   font-family: "sans-serif";
@@ -172,18 +189,27 @@ body {
   gap: 4px;
 }
 
+.login-personname,
+.personname {
+  font-weight: 700;
+}
+
+.logger-username,
+.username {
+  font-size: 1.6rem;
+}
 .threedot-container {
   width: 3rem;
 }
 .three-dot {
-  width: 3rem;
+  width: 2rem;
 }
 
-/* content section */
+/* --------------- content section --------------*/
 
 .content-section {
   display: grid;
-  grid-template-columns: 60fr 40fr;
+  grid-template-columns: 62fr 38fr;
   column-gap: 2.4rem;
 }
 
@@ -191,9 +217,6 @@ body {
   /* background-color: aqua; */
 }
 
-.content-sidebar {
-  /* background-color: blue; */
-}
 .top-home {
   font-family: "Lato";
   font-size: 22px;
@@ -226,4 +249,199 @@ body {
 }
 .foryou {
   text-decoration: underline 4px rgb(122, 168, 255);
+}
+
+/* -----------content-sidebar section-------------- */
+.content-sidebar {
+  padding-bottom: 10rem;
+}
+.donot-touch {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  padding: 7px 0;
+  background-color: #fff;
+}
+
+.search-container {
+  padding: 1.4rem 1.2rem;
+  background-color: #f0f3f0;
+  border-radius: 8rem;
+}
+/* when search is active then this css is active */
+.search-container--active {
+  background-color: #fff;
+  outline: 1px solid #1da1f2;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 2rem;
+  margin: 0 2rem 0 1rem;
+  fill: #666;
+}
+
+.search__box {
+  width: 76%;
+  height: auto;
+}
+
+#search {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: none;
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.search__clear {
+  background-color: rgb(7, 124, 187);
+  display: flex;
+  padding: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #1da1f2;
+  margin-left: 1.2rem;
+  display: none;
+}
+
+.cross-icon {
+  width: 1.2rem;
+  fill: white;
+}
+
+/* trendforyou  */
+
+.trends-section {
+  font-family: "Lato";
+  margin-top: 2rem;
+  background-color: #f2f4f2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.trend {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 1.2rem 2rem;
+  color: #555;
+  font-size: 1.6rem;
+}
+.trend:hover,
+.trend:active {
+  background-color: #dedfdf;
+}
+
+.trend :not(:last-child) {
+  padding: 2px 0;
+}
+
+.trend__topic {
+  color: #000;
+  font-weight: 700;
+}
+.trend-3dot {
+  position: absolute;
+  right: 2rem;
+  top: 5px;
+  padding: 0.5rem;
+}
+.three-dot {
+  fill: #555;
+}
+.trend-3dot:hover {
+  background-color: #bfe0f5;
+  border-radius: 50%;
+}
+.trend-3dot:hover .three-dot {
+  fill: #1da1f2;
+}
+
+/*  who to follow section */
+
+.whotofollow {
+  font-family: "Lato";
+  background-color: #f0f3f0;
+  margin-top: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.recommanded-tw-account {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem 1.2rem 2rem;
+}
+.recommanded-tw-account:hover,
+.recommanded-tw-account:active {
+  background-color: #dedfdf;
+}
+
+.user-pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(177, 181, 177);
+}
+
+.user-account-link {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.user-account-link:hover {
+  text-decoration: underline;
+}
+
+.follow-btn {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+}
+.follow {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* sidebar - footer */
+
+.sidebar-footer {
+  font-family: "Lato";
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.footer-link {
+  display: inline-block;
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer:active {
+  text-decoration: underline;
 }
