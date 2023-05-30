@@ -116,27 +116,27 @@ body {
   fill: #555;
 }
 
-.post-reaction-icon:hover,
-.post-reaction-icon:active {
+.reaction:hover .post-reaction-icon,
+.reaction:active .post-reaction-icon {
   background-color: #daebf6;
   fill: #1da1f2;
 }
 
-.post-reaction-icon:hover + span,
-.post-reaction-icon:active + span {
+.reaction:hover span,
+.reaction:active span {
   color: #1da1f2;
 }
-
-.love:hover,
-.love:active {
+.reaction:hover .love,
+.reaction:active .love {
   background-color: rgb(251, 226, 226);
   fill: rgb(242, 19, 19);
 }
 
-.love:hover + span,
-.love:active + span {
+.reaction:hover .reaction-count--love,
+.reaction:active .reaction-count--love {
   color: rgb(245, 34, 34);
 }
+
 /* ------------------ General css end------------------------ */
 
 /* ----------- ele-home ----------- */
@@ -191,6 +191,7 @@ body {
   align-items: center;
   padding: 0.8rem 1.2rem;
   border-radius: 3.6rem;
+  cursor: pointer;
 }
 .login-user-info:hover,
 .login-user-info:active {
@@ -256,6 +257,7 @@ body {
   top: 0;
   flex-direction: column;
   border-bottom: solid 0.5px #d5d5d5;
+  cursor: pointer;
 }
 .top-home {
   font-family: "Lato";
@@ -297,6 +299,7 @@ body {
 }
 
 .user-post-container {
+  /*  */
 }
 .post {
   margin: 1.6rem 0 1rem 1rem;
@@ -369,8 +372,9 @@ body {
 
 .post-example {
   padding: 1.6rem;
-  border-bottom: #0001 1px solid;
   font-family: "Lato";
+  border-bottom: #0001 1px solid;
+  cursor: pointer;
 }
 .post-example:hover {
   background-color: #f6f4f4;
@@ -428,6 +432,7 @@ body {
 
 .reaction {
   display: flex;
+  padding: 0.4rem;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
@@ -522,6 +527,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   padding: 1rem 2rem 1.2rem 2rem;
   color: #555;
   font-size: 1.6rem;
@@ -571,6 +577,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1rem 2rem 1.2rem 2rem;
+  cursor: pointer;
 }
 .recommanded-tw-account:hover,
 .recommanded-tw-account:active {
