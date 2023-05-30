@@ -20,16 +20,17 @@ body {
 
 /* main container */
 .twitter-container {
-  width: 72vw;
+  max-width: 72vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 22fr 78fr;
   column-gap: 1.2rem;
   margin: 0 auto;
+  /* test */
+  /* background-color: red; */
 }
 
 .nav-section {
-  border-right: 1px solid rgb(239, 232, 232);
   padding-right: 1rem;
 }
 
@@ -108,6 +109,34 @@ body {
   font-weight: 900;
 }
 
+.post-reaction-icon {
+  width: 3rem;
+  padding: 5px;
+  border-radius: 50%;
+  fill: #555;
+}
+
+.post-reaction-icon:hover,
+.post-reaction-icon:active {
+  background-color: #daebf6;
+  fill: #1da1f2;
+}
+
+.post-reaction-icon:hover + span,
+.post-reaction-icon:active + span {
+  color: #1da1f2;
+}
+
+.love:hover,
+.love:active {
+  background-color: rgb(251, 226, 226);
+  fill: rgb(242, 19, 19);
+}
+
+.love:hover + span,
+.love:active + span {
+  color: rgb(245, 34, 34);
+}
 /* ------------------ General css end------------------------ */
 
 /* ----------- ele-home ----------- */
@@ -158,7 +187,7 @@ body {
   font-family: "Lato";
   margin-top: auto;
   display: flex;
-  justify-content: space-evenly;
+  gap: 1rem;
   align-items: center;
   padding: 0.8rem 1.2rem;
   border-radius: 3.6rem;
@@ -199,6 +228,7 @@ body {
   font-size: 1.6rem;
 }
 .threedot-container {
+  margin-left: auto;
   width: 3rem;
 }
 .three-dot {
@@ -214,54 +244,73 @@ body {
 }
 
 .content-bar {
- border-right: #c6c4c4 1px solid;
+  border-left: 1px solid rgb(239, 232, 232);
+  border-right: #c6c4c4 1px solid;
 }
 
-.top-home {
-  font-family: "Lato";
-  font-size: 22px;
-  padding-bottom: 10px;
-}
 .top-content {
+  font-family: "Lato";
   background-color: rgba(255, 255, 255, 0.946);
-  padding-top: 20px;
-  position: fixed;
-  display: flex;
+  padding-top: 1.6rem;
+  position: sticky;
+  top: 0;
   flex-direction: column;
   border-bottom: solid 0.5px #d5d5d5;
 }
+.top-home {
+  font-family: "Lato";
+  display: block;
+  font-weight: 900;
+  font-size: 2.4rem;
+  padding: 1rem;
+}
 .follow_foryou {
   display: flex;
-  font-size: 16px;
+  font-size: 1.8rem;
 }
-.mains {
-  font-family: "Lato";
-  padding: 10px 118px;
-  padding-top: 30px;
-  color: black;
-  
-}
-.mains:hover {
-  background-color: #e4e6e9;
+.main-nav {
+  position: relative;
+  flex: 50%;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.4s;
 }
-#follow {
-  color: rgb(150, 150, 150);
+.main-nav:hover,
+.main-nav:active {
+  background-color: #e4e6e9;
 }
-#foryou {
-  text-decoration: underline 4px rgb(122, 168, 255);
+
+.main-nav--active::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 4px;
+  width: 8rem;
+  border-radius: 20%;
+  background-color: #1da1f2;
 }
-.post{
-  margin: 125px 10px 0px 10px;
+
+.user-post-container {
+}
+.post {
+  margin: 1.6rem 0 1rem 1rem;
   display: flex;
 }
-.top-post{
-  border-bottom:1px rgb(224, 222, 222) solid ;
+.create-post {
+  border-bottom: 1px rgb(224, 222, 222) solid;
 }
-.profile-pic{
-  margin-top: -10px;
+
+.profile-pic {
+  margin-top: -1rem;
   border-radius: 50%;
 }
+
 /* code useful for javascript */
 /* .everyone{
   margin: 0px 20px 5px 10px;
@@ -276,110 +325,124 @@ body {
   background-color: #d9f0ff;
   transition: 500ms;
 } */
-.write-section{
+
+.write-section {
   display: flex;
-  flex-direction:column;
-  margin: 10px 0px 0px 10px;
+  width: 100%;
+  flex-direction: column;
+  margin: 1rem 0px 0px 1rem;
 }
-.write{
+.write {
   border: none;
   outline: none;
-  font-size:x-large;
+  font-size: x-large;
+  width: 94%;
 }
-.icons-post{
+.icons-post {
   display: flex;
- justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
-.icons-post svg{
-  border-radius: 15px;
-  padding: 5px 5px; 
+.icons-post svg {
+  border-radius: 1.5rem;
+  padding: 0.5rem;
   transition: 300ms;
 }
-.icons-post svg:hover{
-background-color: #c0e4fa;
 
-}
-.post-bottom{
-  margin-top: 20px;
+.post-bottom {
+  padding: 1rem 0;
+  margin: 2.4rem 1.6rem 1rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.tweet-button-post{
-padding: 10px 25px;
+.tweet-button-post {
+  padding: 1rem 2rem;
   background-color: #57b3ec;
   color: #f0f3f0;
   font-size: medium;
   font-family: "Lato";
-  border-radius: 25px;
-  width: 20%;
+  font-weight: 700;
+  border-radius: 2.5rem;
   height: max-content;
 }
-.post-example{
-  margin: 5px;
-  border-bottom: #0001 1px solid ;
+
+.post-example {
+  padding: 1.6rem;
+  border-bottom: #0001 1px solid;
   font-family: "Lato";
 }
-.post-example:hover{
- background-color: #f6f4f4;
+.post-example:hover {
+  background-color: #f6f4f4;
 }
-.user-post{
+.user-post {
   display: flex;
 }
 .user-post img {
- height: 50px;
- width: 50px;
+  height: 5rem;
+  width: 5rem;
 }
-.name{
+.name {
   font-size: large;
-  font-weight: bold
+  font-weight: bold;
 }
-.verified img{
-  height: 20px;
-  width: 20px;
+.verified img {
+  height: 2rem;
+  width: 2rem;
 }
-.username-post{
+.username-post {
   font-size: medium;
 }
-.actualpost-top{
+.actualpost-top {
   display: flex;
+  gap: 0.4rem;
 }
-.actual-post{
-  padding:0px 20px 0px 20px;
+
+.post-3dot {
+  margin-left: auto;
+  padding: 5px;
+  border-radius: 50%;
+}
+.post-3dot:hover,
+.post-3dot:active {
+  background-color: #c0e4fa;
+}
+
+.actual-post {
+  padding: 0px 0.6rem 0px 2rem;
   display: flex;
   flex-direction: column;
 }
-.actualpost-text{
-  margin-top: 20px;
+.actualpost-text {
+  margin-top: 4px;
   font-size: large;
 }
-.actualpost-img{
-  margin-top: 20px;
+.actualpost-img {
+  margin-top: 2rem;
 }
-.actualpost-img img{
-  width: 500px;
+.actualpost-img img {
+  width: 50rem;
   height: auto;
-  border-radius: 20px ;
-}
-.actualpost-bottom{
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-.svg svg{
-  padding: 5px 5px 0px 5px;
-  width: 30px;
-  height: auto;
-  transition: 400ms;
-}
-.svg{
-  text-indent: 5px;
-  font-weight: bold;
-}
-.actualpost-bottom svg:hover{
-  background-color: #abddfc;
   border-radius: 20px;
-  transition: 400ms;
 }
+
+.reaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.reaction-count {
+  font-size: 1.6rem;
+}
+.post-reaction {
+  margin-top: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* -----------content-sidebar section-------------- */
 .content-sidebar {
   padding-bottom: 10rem;
@@ -388,7 +451,7 @@ padding: 10px 25px;
   position: sticky;
   z-index: 1000;
   top: 0;
-  padding: 7px 0;
+  padding: 0.7rem 0;
   background-color: #fff;
 }
 
