@@ -13,34 +13,40 @@ html {
 }
 
 body {
-  font-family: "Lato" "sans-serif";
+  font-family: "Lato", "sans-serif";
   line-height: 1;
   color: #333;
 }
 
 /* main container */
 .twitter-container {
-  max-width: 72vw;
-  height: 100vh;
+  width: 130rem;
   display: grid;
   grid-template-columns: 22fr 78fr;
   column-gap: 1.2rem;
   margin: 0 auto;
   /* test */
-  /* background-color: red; */
+  /* background-color: green; */
 }
 
 .nav-section {
-  padding-right: 1rem;
+  /*  */
 }
 
-.nav-side-header {
-  position: sticky;
-  top: 0;
-  height: 98vh;
+.nav-sub-header1 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.nav-side-header {
+  /* test */
+  position: sticky;
+  top: 0;
+  /* test */
+  height: 98vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .twitter-logo-box {
@@ -84,6 +90,10 @@ body {
 }
 
 .icon {
+  width: 3rem;
+}
+
+.post-symbol-icon {
   width: 3rem;
 }
 
@@ -160,34 +170,33 @@ body {
 /* ------------- ele tweet btn ----------- */
 
 .nav-tweet-btn {
-  background-color: #1da1f2;
-  margin-top: 4rem;
   text-decoration: none;
-  border-radius: 3rem;
-  width: 90%;
-}
-.nav-tweet-btn:hover {
-  background-color: rgb(12, 137, 215);
+  margin-top: auto;
 }
 .tweet-btn {
+  width: 90%;
+  border-radius: 3rem;
+  background-color: #1da1f2;
   padding: 1.6rem;
   font-size: 2rem;
   text-align: center;
 }
+.tweet-btn:hover {
+  background-color: rgb(12, 137, 215);
+}
 
 .tweet-label {
-  font-family: "Loto";
+  font-family: "Lato";
   font-size: 2.4rem;
-  font-weight: 900;
+  font-weight: 700;
   color: White;
 }
 
 /*---------- ele login user info -------------------*/
 .login-user-info {
   font-family: "Lato";
-  margin-top: auto;
   display: flex;
-  gap: 1rem;
+  margin-top: 1rem;
   align-items: center;
   padding: 0.8rem 1.2rem;
   border-radius: 3.6rem;
@@ -216,6 +225,7 @@ body {
   flex-direction: column;
   font-family: "sans-serif";
   font-size: 1.8rem;
+  margin-left: 1.6rem;
   gap: 4px;
 }
 
@@ -449,7 +459,7 @@ body {
 }
 
 /* -----------content-sidebar section-------------- */
-.content-sidebar {
+.explore-sidebar {
   padding-bottom: 10rem;
 }
 .donot-touch {
@@ -643,4 +653,13 @@ body {
 .footer-link:hover,
 .footer:active {
   text-decoration: underline;
+}
+
+/* some changer which will be activate through ressponsive.css*/
+.tweet-icon {
+  display: none;
+}
+
+.svg-search-path {
+  display: none;
 }
