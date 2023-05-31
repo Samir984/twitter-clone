@@ -33,6 +33,11 @@ body {
   /*  */
 }
 
+.nav-sub-header1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .nav-side-header {
   /* test */
   position: sticky;
@@ -40,8 +45,8 @@ body {
   /* test */
   height: 98vh;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .twitter-logo-box {
@@ -85,6 +90,10 @@ body {
 }
 
 .icon {
+  width: 3rem;
+}
+
+.post-symbol-icon {
   width: 3rem;
 }
 
@@ -162,7 +171,7 @@ body {
 
 .nav-tweet-btn {
   text-decoration: none;
-  margin-top: 4rem;
+  margin-top: auto;
 }
 .tweet-btn {
   width: 90%;
@@ -186,9 +195,8 @@ body {
 /*---------- ele login user info -------------------*/
 .login-user-info {
   font-family: "Lato";
-  margin-top: auto;
   display: flex;
-  gap: 1rem;
+  margin-top: 1rem;
   align-items: center;
   padding: 0.8rem 1.2rem;
   border-radius: 3.6rem;
@@ -217,6 +225,7 @@ body {
   flex-direction: column;
   font-family: "sans-serif";
   font-size: 1.8rem;
+  margin-left: 1.6rem;
   gap: 4px;
 }
 
@@ -450,7 +459,7 @@ body {
 }
 
 /* -----------content-sidebar section-------------- */
-.content-sidebar {
+.explore-sidebar {
   padding-bottom: 10rem;
 }
 .donot-touch {
@@ -648,5 +657,9 @@ body {
 
 /* some changer which will be activate through ressponsive.css*/
 .tweet-icon {
+  display: none;
+}
+
+.svg-search-path {
   display: none;
 }

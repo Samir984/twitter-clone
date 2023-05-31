@@ -1,6 +1,7 @@
 /* desktop to mobile approaach */
 /* 1500px -400px size device */
 
+/* 1300px */
 @media (max-width: 1300px) {
   .twitter-logo-box {
     width: 80%;
@@ -52,11 +53,8 @@
   }
 
   .twitter-container {
-    width: 106rem;
-  }
-
-  .twitter-container {
     display: grid;
+    width: 110rem;
     grid-template-columns: 6fr 94fr;
     gap: 0;
   }
@@ -64,5 +62,69 @@
     gap: 0;
     padding: 1rem;
     border-radius: 50%;
+  }
+}
+
+/* this css property is user to abject nav-header when height is decrease */
+@media (max-height: 800px) {
+  .nav-sub-header1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+@media (max-height: 700px) {
+  .nav-sub-header1 {
+    gap: 0.2rem;
+  }
+}
+
+@media (max-height: 640px) {
+  .lists,
+  .bookmarks {
+    display: none;
+  }
+  .nav-side-header {
+    overflow-y: scroll;
+  }
+}
+
+/* 1120px  */
+@media (max-width: 1120px) {
+  .twitter-container {
+    display: grid;
+    width: 100rem;
+  }
+
+  .content-section {
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+    column-gap: 1.4rem;
+  }
+}
+
+/* 1000pc */
+@media (max-width: 1000px) {
+  .twitter-container {
+    display: grid;
+    width: 75rem;
+  }
+
+  .explore-sidebar {
+    display: none;
+  }
+
+  .content-section {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .svg-search-path {
+    display: block;
+  }
+
+  .svg-hash-path {
+    display: none;
   }
 }
