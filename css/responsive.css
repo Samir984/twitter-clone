@@ -1,2 +1,68 @@
 /* desktop to mobile approaach */
-/* 2000px -400px size device */
+/* 1500px -400px size device */
+
+@media (max-width: 1300px) {
+  .twitter-logo-box {
+    width: 80%;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .twitter__logo {
+    width: 5rem;
+    padding: 1rem;
+  }
+
+  .icon {
+    width: 2.6rem;
+  }
+
+  .nav-tweet-btn {
+    /* padding: 1rem; */
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-user-info {
+    padding: 0.6rem;
+  }
+
+  .nav-ele-link {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-ele-link .label__general:last-child {
+    display: none;
+  }
+
+  .nav-tweet-btn .tweet-label:first-child {
+    display: none;
+  }
+  .tweet-icon {
+    display: block;
+  }
+
+  .login-user-info .login-user-detail,
+  .threedot-container {
+    display: none;
+  }
+
+  .twitter-container {
+    width: 106rem;
+  }
+
+  .twitter-container {
+    display: grid;
+    grid-template-columns: 6fr 94fr;
+    gap: 0;
+  }
+  .general--box {
+    gap: 0;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+}
