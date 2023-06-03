@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <title>Twitter</title>
-    <link rel="icon" type="image/png" href="asset/twitter_favicon.png" />
+    <link rel="icon" type="image/png" href="asset/twitter__favicon.jpg" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <!-- main container -->
@@ -15,8 +16,8 @@
       <!-- section nav -->
       <section class="nav-section">
         <div class="nav-side-header">
+          <!-- ele-logo -->
           <div class="nav-sub-header1">
-            <!-- ele-logo -->
             <div class="twitter-logo-box">
               <a href="#">
                 <svg
@@ -33,7 +34,9 @@
                 </svg>
               </a>
             </div>
-            <!-- ele-home -->
+          </div>
+          <!-- ele-home -->
+          <div class="nav-sub-header2">
             <a href="#home" class="nav-ele-link active-nav-ele--action">
               <div class="home-box general--box active-nav-ele-logo--action">
                 <svg
@@ -227,12 +230,12 @@
             </a>
           </div>
 
-          <div class="nav-sub-header2">
+          <div class="nav-sub-header3">
             <!-- ele login user info -->
             <div class="login-user-info">
               <div class="login-user-pic-container">
                 <img
-                  src="https://pbs.twimg.com/profile_images/1590968738358079488/IY9Gx6Ok_400x400.jpg"
+                  src="asset/userpic.jpg"
                   class="user-pic"
                   alt="user-image"
                 />
@@ -259,7 +262,51 @@
       <section class="content-section">
         <div class="content-bar">
           <div class="top-content">
-            <span class="top-home">Home</span>
+            <div class="top-home">
+              <span class="home-label">Home</span>
+
+              <div class="mobile-nav-header">
+                <div class="mobile-nav-toggal">
+                  <img
+                    src="asset/userpic.jpg"
+                    class="user-pic"
+                    alt="user-image"
+                    style="border-radius: 50%"
+                  />
+                </div>
+                <div class="mobile-twitter-logo">
+                  <a href="#">
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="twitter__logo logo"
+                      fill="#1DA1F2"
+                    >
+                      <g>
+                        <path
+                          d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <!-- mobile navigation -->
+                <div class="mobile-nav">
+                  <div class="mobile-nav-overlay">
+                    <div class="mb-nav">
+                      <div class="mobile-nav-label">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eaque in itaque possimus eos esse. Ex ipsa dolorem nisi
+                        veniam at!
+                      </div>
+                      <div class="mobile-nav-header"></div>
+                      <div class="mobile-nav-link"></div>
+                      <div class="mobile-nav-tool"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="follow_foryou">
               <a href="#" class="main-nav main-nav--active"> For You </a>
               <a href="#" class="main-nav"> Following </a>
@@ -270,10 +317,10 @@
             <div class="post">
               <img
                 class="profile-pic"
-                src="https://pbs.twimg.com/profile_images/1590968738358079488/IY9Gx6Ok_400x400.jpg"
+                src="asset/userpic.jpg"
                 alt=""
-                width="10%"
-                height="10%"
+                width="55px"
+                height="55px"
               />
               <div class="write-section">
                 <!-- <b class="everyone">
@@ -373,7 +420,7 @@
               <div class="user-post">
                 <div>
                   <img
-                    src="https://pbs.twimg.com/profile_images/1410983637391069187/bxoCUxj8_400x400.jpg"
+                    src="asset/account.png"
                     alt="RONB-post"
                     style="border-radius: 50%"
                   />
@@ -382,7 +429,9 @@
                   <div class="actualpost-top">
                     <div class="name">
                       <a href="#" class="user-account-link"
-                        >Routine of Nepal banda</a
+                        ><span class="account-name">
+                          Routine of Nepal banda</span
+                        ></a
                       >
                     </div>
                     <div class="verified">
@@ -392,7 +441,9 @@
                         style="border-radius: 50%"
                       />
                     </div>
-                    <div class="username-post">@RONBupdates.22h</div>
+                    <div class="username-post">
+                      <span class="username"> @RONBupdates.22h</span>
+                    </div>
 
                     <div class="post-3dot">
                       <svg
@@ -414,10 +465,7 @@
                     Pic. redcapofficial
                   </div>
                   <div class="actualpost-img">
-                    <img
-                      src="https://pbs.twimg.com/media/FxRVF9YagAEKffU?format=jpg&name=medium"
-                      alt="post-image"
-                    />
+                    <img src="asset/post.jpg" alt="post-image" />
                   </div>
                   <div class="post-reaction">
                     <div class="reaction">
@@ -508,8 +556,9 @@
               <div class="user-post">
                 <div>
                   <img
-                    src="https://pbs.twimg.com/profile_images/1410983637391069187/bxoCUxj8_400x400.jpg"
-                    alt=""
+                    src="asset/account.png"
+                    alt="RONB-post"
+                    style="border-radius: 50%"
                   />
                 </div>
                 <div class="actual-post">
@@ -526,7 +575,9 @@
                         style="border-radius: 50%"
                       />
                     </div>
-                    <div class="username-post">@RONBupdates.22h</div>
+                    <div class="username-post">
+                      <span class="username"> @RONBupdates.22h</span>
+                    </div>
 
                     <div class="post-3dot">
                       <svg
@@ -548,10 +599,7 @@
                     Pic. redcapofficial
                   </div>
                   <div class="actualpost-img">
-                    <img
-                      src="https://pbs.twimg.com/media/FxRVF9YagAEKffU?format=jpg&name=medium"
-                      alt="post-image"
-                    />
+                    <img src="asset/post.jpg" alt="post-image" />
                   </div>
                   <div class="post-reaction">
                     <div class="reaction">
@@ -642,8 +690,9 @@
               <div class="user-post">
                 <div>
                   <img
-                    src="https://pbs.twimg.com/profile_images/1410983637391069187/bxoCUxj8_400x400.jpg"
-                    alt=""
+                    src="asset/account.png"
+                    alt="RONB-post"
+                    style="border-radius: 50%"
                   />
                 </div>
                 <div class="actual-post">
@@ -660,7 +709,9 @@
                         style="border-radius: 50%"
                       />
                     </div>
-                    <div class="username-post">@RONBupdates.22h</div>
+                    <div class="username-post">
+                      <span class="username"> @RONBupdates.22h</span>
+                    </div>
 
                     <div class="post-3dot">
                       <svg
@@ -682,10 +733,7 @@
                     Pic. redcapofficial
                   </div>
                   <div class="actualpost-img">
-                    <img
-                      src="https://pbs.twimg.com/media/FxRVF9YagAEKffU?format=jpg&name=medium"
-                      alt="post-image"
-                    />
+                    <img src="asset/post.jpg" alt="post-image" />
                   </div>
                   <div class="post-reaction">
                     <div class="reaction">
@@ -774,8 +822,9 @@
               <div class="user-post">
                 <div>
                   <img
-                    src="https://pbs.twimg.com/profile_images/1410983637391069187/bxoCUxj8_400x400.jpg"
-                    alt=""
+                    src="asset/account.png"
+                    alt="RONB-post"
+                    style="border-radius: 50%"
                   />
                 </div>
                 <div class="actual-post">
@@ -792,7 +841,9 @@
                         style="border-radius: 50%"
                       />
                     </div>
-                    <div class="username-post">@RONBupdates.22h</div>
+                    <div class="username-post">
+                      <span class="username"> @RONBupdates.22h</span>
+                    </div>
 
                     <div class="post-3dot">
                       <svg
@@ -814,10 +865,7 @@
                     Pic. redcapofficial
                   </div>
                   <div class="actualpost-img">
-                    <img
-                      src="https://pbs.twimg.com/media/FxRVF9YagAEKffU?format=jpg&name=medium"
-                      alt="post-image"
-                    />
+                    <img src="asset/post.jpg" alt="post-image" />
                   </div>
                   <div class="post-reaction">
                     <div class="reaction">
@@ -904,8 +952,95 @@
             </div>
             <!-- post end -->
           </div>
+          <!-- mobile-nav- bottom -->
+          <div class="mobile-nav-bottom">
+            <a href="#home" class="nav-ele-link active-nav-ele--action">
+              <div class="home-box general--box active-nav-ele-logo--action">
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="home-icon icon"
+                  stroke-width="1.6px"
+                >
+                  <g>
+                    <path
+                      d="M12 1.696L.622 8.807l1.06 1.696L3 9.679V19.5C3 20.881 4.119 22 5.5 22h13c1.381 0 2.5-1.119 2.5-2.5V9.679l1.318.824 1.06-1.696L12 1.696zM12 16.5c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+
+            <!-- ele explore -->
+            <a href="#explore" class="nav-ele-link">
+              <div class="explore-box general--box">
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="explore-icon icon"
+                >
+                  <g class="svg-search-path">
+                    <path
+                      d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+
+            <!--ele notification  -->
+            <a href="#notification" class="nav-ele-link">
+              <div class="notification-box general--box">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="notification-icon icon"
+                >
+                  <g>
+                    <path
+                      d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+
+            <!-- ele message -->
+            <a href="#message" class="nav-ele-link">
+              <div class="message-box general--box">
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="message-icon icon"
+                >
+                  <g>
+                    <path
+                      d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+            <a href="#tweet" class="mobile-tweet-btn">
+              <div class="tweet-btn" style="width: 6rem">
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="tweet-icon icon"
+                >
+                  <g>
+                    <path
+                      d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
-        <!-- content sidebar -->
+        <!-- explore sidebar section -->
         <div class="explore-sidebar">
           <div class="donot-touch">
             <div class="search-container">
@@ -1227,7 +1362,7 @@
               <div class="recommanded-tw-account">
                 <div class="user-pic-container">
                   <img
-                    src="asset/twitter_favicon.png"
+                    src="asset/twitter__favicon.jpg"
                     class="user-pic"
                     alt="user-image"
                   />
@@ -1247,7 +1382,7 @@
               <div class="recommanded-tw-account">
                 <div class="user-pic-container">
                   <img
-                    src="asset/twitter_favicon.png"
+                    src="asset/twitter__favicon.jpg"
                     class="user-pic"
                     alt="user-image"
                   />
@@ -1267,7 +1402,7 @@
               <div class="recommanded-tw-account">
                 <div class="user-pic-container">
                   <img
-                    src="asset/twitter_favicon.png"
+                    src="asset/twitter__favicon.jpg"
                     class="user-pic"
                     alt="user-image"
                   />
@@ -1303,5 +1438,4 @@
       </section>
     </div>
   </body>
-  <script src="script.js"></script>
 </html>

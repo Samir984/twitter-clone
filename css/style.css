@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* test */
+  outline: 1px solid green;
 }
 
 html {
@@ -22,30 +24,25 @@ body {
 .twitter-container {
   width: 130rem;
   display: grid;
-  grid-template-columns: 22fr 78fr;
+  grid-template-columns: 10fr 78fr;
   column-gap: 1.2rem;
   margin: 0 auto;
-  /* test */
-  /* background-color: green; */
 }
 
-.nav-section {
-  /*  */
-}
-
-.nav-sub-header1 {
+.nav-sub-header2 {
   display: flex;
   flex-direction: column;
+  /* flex: 60%; */
   gap: 1rem;
 }
+.nav-sub-header3 {
+  margin-top: auto;
+}
 .nav-side-header {
-  /* test */
   position: sticky;
   top: 0;
-  /* test */
   height: 98vh;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -149,24 +146,6 @@ body {
 
 /* ------------------ General css end------------------------ */
 
-/* ----------- ele-home ----------- */
-
-/* ------------- ele-explore --------------*/
-
-/* ----------- ele-notification ----------- */
-
-/* ----------- ele-message ----------- */
-
-/* ----------- ele-list ----------- */
-
-/* ----------- ele-bookmarks ----------- */
-
-/* ----------- ele-twitter blue ----------- */
-
-/* ----------- ele-profile ----------- */
-
-/* ----------- ele-more ----------- */
-
 /* ------------- ele tweet btn ----------- */
 
 .nav-tweet-btn {
@@ -174,7 +153,9 @@ body {
   margin-top: auto;
 }
 .tweet-btn {
-  width: 90%;
+  width: 94%;
+  display: flex;
+  justify-content: center;
   border-radius: 3rem;
   background-color: #1da1f2;
   padding: 1.6rem;
@@ -217,6 +198,7 @@ body {
 
 .user-pic {
   width: 5rem;
+  height: 5rem;
 }
 
 .login-user-detail,
@@ -250,27 +232,26 @@ body {
 
 .content-section {
   display: grid;
-  grid-template-columns: 62fr 38fr;
+  grid-template-columns: 73fr 38fr;
   column-gap: 2.4rem;
 }
 
 .content-bar {
+  font-family: "Lato";
   border-left: 1px solid rgb(239, 232, 232);
   border-right: #c6c4c4 1px solid;
 }
 
 .top-content {
-  font-family: "Lato";
-  background-color: rgba(255, 255, 255, 0.946);
-  padding-top: 1.6rem;
   position: sticky;
   top: 0;
+  background-color: rgba(255, 255, 255, 0.946);
+  padding-top: 1.6rem;
   flex-direction: column;
   border-bottom: solid 0.5px #d5d5d5;
   cursor: pointer;
 }
 .top-home {
-  font-family: "Lato";
   display: block;
   font-weight: 900;
   font-size: 2.4rem;
@@ -309,7 +290,8 @@ body {
 }
 
 .user-post-container {
-  /*  */
+  display: flex;
+  flex-direction: column;
 }
 .post {
   margin: 1.6rem 0 1rem 1rem;
@@ -320,7 +302,7 @@ body {
 }
 
 .profile-pic {
-  margin-top: -1rem;
+  margin-top: 1rem;
   border-radius: 50%;
 }
 
@@ -381,8 +363,10 @@ body {
 }
 
 .post-example {
-  padding: 1.6rem;
+  padding: 1rem;
+  /* flex: 100%; */
   font-family: "Lato";
+  display: flex;
   border-bottom: #0001 1px solid;
   cursor: pointer;
 }
@@ -397,19 +381,37 @@ body {
   width: 5rem;
 }
 .name {
-  font-size: large;
+  font-size: 2rem;
   font-weight: bold;
 }
 .verified img {
   height: 2rem;
-  width: 2rem;
+  width: auto;
 }
-.username-post {
-  font-size: medium;
-}
+
 .actualpost-top {
   display: flex;
-  gap: 0.4rem;
+  align-items: center;
+}
+
+.user-account-link {
+  font-size: 1.8rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.username-post {
+  font-size: 1.4rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actualpost-text {
+  font-size: 1.6rem;
 }
 
 .post-3dot {
@@ -423,20 +425,25 @@ body {
 }
 
 .actual-post {
-  padding: 0px 0.6rem 0px 2rem;
+  padding: 0px 0.6rem 0px 1rem;
   display: flex;
   flex-direction: column;
 }
 .actualpost-text {
   margin-top: 4px;
-  font-size: large;
+  font-size: 1.8rem;
 }
 .actualpost-img {
+  display: flex;
+  flex-shrink: 2;
   margin-top: 2rem;
 }
 .actualpost-img img {
-  width: 50rem;
   height: auto;
+  width: 100%;
+
+  justify-content: center;
+
   border-radius: 20px;
 }
 
@@ -453,12 +460,11 @@ body {
 }
 .post-reaction {
   margin-top: 1rem;
-  width: 90%;
   display: flex;
   justify-content: space-between;
 }
 
-/* -----------content-sidebar section-------------- */
+/* ----------- explore sidebar section-------------- */
 .explore-sidebar {
   padding-bottom: 10rem;
 }
@@ -475,6 +481,7 @@ body {
   background-color: #f0f3f0;
   border-radius: 8rem;
 }
+
 /* when search is active then this css is active */
 .search-container--active {
   background-color: #fff;
@@ -641,7 +648,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 10rem 2rem;
 }
 
 .footer-link {
@@ -661,5 +668,18 @@ body {
 }
 
 .svg-search-path {
+  display: none;
+}
+
+.mobile-nav-header {
+  display: none;
+}
+.mobile-nav-bottom,
+.mobile-tweet-btn {
+  display: none;
+}
+
+/* mobile nav */
+.mobile-nav {
   display: none;
 }

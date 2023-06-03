@@ -21,7 +21,6 @@
   }
 
   .nav-tweet-btn {
-    /* padding: 1rem; */
     width: 100%;
     margin: 0;
     display: flex;
@@ -53,11 +52,15 @@
   }
 
   .twitter-container {
-    display: grid;
-    width: 110rem;
-    grid-template-columns: 6fr 94fr;
-    gap: 0;
+    width: 98%;
+    grid-template-columns: 6.2rem auto;
   }
+
+  .content-section {
+    gap: 1rem;
+    grid-template-columns: minmax(63fr, 80fr) minmax(28rem, 100fr);
+  }
+
   .general--box {
     gap: 0;
     padding: 1rem;
@@ -67,16 +70,10 @@
 
 /* this css property is user to abject nav-header when height is decrease */
 @media (max-height: 800px) {
-  .nav-sub-header1 {
+  .nav-sub-header2 {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-  }
-}
-
-@media (max-height: 700px) {
-  .nav-sub-header1 {
-    gap: 0.2rem;
+    gap: 0.5rem;
   }
 }
 
@@ -90,25 +87,10 @@
   }
 }
 
-/* 1120px  */
-@media (max-width: 1120px) {
-  .twitter-container {
-    display: grid;
-    width: 100rem;
-  }
-
-  .content-section {
-    display: grid;
-    grid-template-columns: 70fr 30fr;
-    column-gap: 1.4rem;
-  }
-}
-
-/* 1000pc */
+/* 1000px */
 @media (max-width: 1000px) {
   .twitter-container {
-    display: grid;
-    width: 75rem;
+    width: 72rem;
   }
 
   .explore-sidebar {
@@ -116,7 +98,7 @@
   }
 
   .content-section {
-    display: grid;
+    column-gap: 0;
     grid-template-columns: 100%;
   }
 
@@ -128,3 +110,106 @@
     display: none;
   }
 }
+
+/*  800px */
+@media (max-width: 800px) {
+  .content-section {
+    font-size: 57%;
+  }
+  .twitter-container {
+    width: 96%;
+    gap: 0;
+  }
+
+  .content-section {
+    grid-template-columns: 100fr;
+  }
+}
+
+/* 550px */
+@media (max-width: 550px) {
+  .user-account-link {
+    width: 14rem;
+  }
+  .username-post {
+    width: 13rem;
+  }
+}
+
+/* 500px */
+@media (max-width: 500px) {
+  .twitter-container {
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+
+  .content-section {
+    grid-template-columns: 100fr;
+  }
+  .post,
+  .nav-side-header {
+    display: none;
+  }
+  .home-label {
+    display: none;
+  }
+
+  .top-content {
+    padding-top: 0;
+    top: -5.7rem;
+  }
+
+  .top-home {
+    /* position: relative; */
+    padding: 0;
+  }
+  /*  mobile top nav */
+  .mobile-nav-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-nav-toggal {
+    flex: 50%;
+    padding-top: 0.6rem;
+    padding-left: 1.6rem;
+  }
+  .mobile-twitter-logo {
+    flex: 50%;
+  }
+
+  /* mobile-bottom nav */
+  .mobile-nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    padding: 0.5rem 4rem;
+  }
+}
+
+/* 440px Mobile Range */
+@media (max-width: 460px) {
+  .reaction:nth-child(4) {
+    display: none;
+  }
+  .user-account-link {
+    width: 10rem;
+  }
+  .username-post {
+    width: 10rem;
+  }
+}
+
+/* 370px small screen mobile */
+
+@media (max-width: 370px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+/* supported till 300 px */
+/* The End */
