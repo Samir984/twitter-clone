@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   /* test */
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 html {
@@ -24,7 +24,7 @@ body {
 .twitter-container {
   width: 130rem;
   display: grid;
-  grid-template-columns: 10fr 78fr;
+  grid-template-columns: 22fr 78fr;
   column-gap: 1.2rem;
   margin: 0 auto;
 }
@@ -32,7 +32,6 @@ body {
 .nav-sub-header2 {
   display: flex;
   flex-direction: column;
-  /* flex: 60%; */
   gap: 1rem;
 }
 .nav-sub-header3 {
@@ -69,7 +68,6 @@ body {
   font-size: 2.4rem;
   display: inline;
   margin-right: 2rem;
-  letter-spacing: 0.6px;
 }
 
 .general--box {
@@ -245,6 +243,7 @@ body {
 .top-content {
   position: sticky;
   top: 0;
+  /* z-index: 100; */
   background-color: rgba(255, 255, 255, 0.946);
   padding-top: 1.6rem;
   flex-direction: column;
@@ -680,6 +679,6 @@ body {
 }
 
 /* mobile nav */
-.mobile-nav {
+.mobile-nav-content {
   display: none;
 }

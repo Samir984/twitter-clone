@@ -127,7 +127,7 @@
 }
 
 /* 550px */
-@media (max-width: 550px) {
+@media (max-width: 560px) {
   .user-account-link {
     width: 14rem;
   }
@@ -160,7 +160,6 @@
   }
 
   .top-home {
-    /* position: relative; */
     padding: 0;
   }
   /*  mobile top nav */
@@ -187,6 +186,171 @@
     position: fixed;
     bottom: 0;
     padding: 0.5rem 4rem;
+    /* test */
+    /* display: none; */
+  }
+
+  /* tweet btn */
+  .mobile-tweet-btn {
+    display: block;
+    position: absolute;
+    top: -10rem;
+    right: 3rem;
+  }
+
+  /* mobile-nav-toggle */
+  .mobile-nav-content {
+    position: fixed;
+    display: block;
+    top: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.3s;
+  }
+  .mobile-nav {
+    font-size: 1.8rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* transform: translateX(-100%); */
+  }
+
+  .mb-nav {
+    font-size: 1.6rem;
+    width: 28rem;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    flex-shrink: 0;
+    overflow-y: scroll;
+  }
+
+  .mobile-nav-overlay {
+    opacity: 1;
+    flex: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  .mb-nav-top {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 1.6rem 1.6rem 0 1.6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mb-account-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1.6rem;
+  }
+
+  .user-choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login-user-detail {
+    margin: 0;
+    padding: 0.5rem 0 1rem 0;
+  }
+
+  .social-info {
+    color: #555;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .followers,
+  .following {
+    text-decoration: none;
+    color: #555;
+  }
+
+  .followers:active,
+  .following:active {
+    text-decoration: underline;
+  }
+  .followers-count,
+  .following-count {
+    color: #333;
+    font-weight: 700;
+  }
+  .label__general {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #555;
+  }
+  .mb-nav-link {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(227, 236, 233);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .general--box {
+    margin-right: 1.8rem;
+  }
+
+  .mb-nav-ele-link {
+    color: #333;
+    font-weight: 400;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .mb-nav-ele-link:active {
+    background-color: #f7f7f7;
+  }
+
+  .mb-dropdown {
+    padding: 1rem 1.2rem;
+  }
+
+  .dropme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .dropdown-icon {
+    width: 2.4rem;
+    transition: all 0.3s;
+  }
+
+  .drop-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 1.6rem;
+  }
+  .drop {
+    color: #333;
+    padding: 1rem;
+  }
+  .drop-icon {
+    width: 2rem;
+  }
+
+  .drop-content {
+    display: none;
+    /* padding: 1rem; */
+    font-weight: 700;
+  }
+  .dropdown--active .dropdown-icon {
+    fill: #1da1f2;
+    transform: rotate(180deg);
+  }
+
+  .dropdown--active .drop-content {
+    display: block;
   }
 }
 
