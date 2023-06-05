@@ -10,6 +10,9 @@
   /* outline: 1px solid green; */
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 html {
   font-size: 62.5%;
 }
@@ -27,6 +30,10 @@ body {
   grid-template-columns: 22fr 78fr;
   column-gap: 1.2rem;
   margin: 0 auto;
+}
+
+.nav-sub-header1 {
+  margin-right: 1rem;
 }
 
 .nav-sub-header2 {
@@ -47,6 +54,7 @@ body {
 
 .twitter-logo-box {
   width: fit-content;
+
   border-radius: 50%;
 }
 
@@ -64,6 +72,7 @@ body {
 
 .label__general {
   font-family: "Lato";
+  color: #333;
   font-weight: 400;
   font-size: 2.4rem;
   display: inline;
@@ -82,6 +91,14 @@ body {
 .nav-ele-link {
   text-decoration: none;
   color: inherit;
+}
+.nav-ele-link--active .icon {
+  stroke: #000;
+  /* fill: red; */
+}
+
+.nav-ele-link--active .label__general {
+  font-weight: 700;
 }
 
 .icon {
@@ -243,7 +260,7 @@ body {
 .top-content {
   position: sticky;
   top: 0;
-  /* z-index: 100; */
+  z-index: 100;
   background-color: rgba(255, 255, 255, 0.946);
   padding-top: 1.6rem;
   flex-direction: column;
@@ -351,6 +368,7 @@ body {
   align-items: center;
 }
 .tweet-button-post {
+  border: none;
   padding: 1rem 2rem;
   background-color: #57b3ec;
   color: #f0f3f0;
@@ -361,6 +379,10 @@ body {
   height: max-content;
 }
 
+.tweet-button-post:hover,
+.tweet-button-post:active {
+  background-color: #0e9df6;
+}
 .post-example {
   padding: 1rem;
   /* flex: 100%; */
@@ -467,9 +489,10 @@ body {
 .explore-sidebar {
   padding-bottom: 10rem;
 }
+
 .donot-touch {
   position: sticky;
-  z-index: 1000;
+  z-index: 100;
   top: 0;
   padding: 0.7rem 0;
   background-color: #fff;
@@ -515,17 +538,17 @@ body {
 .search__clear {
   background-color: rgb(7, 124, 187);
   display: flex;
-  padding: 0.6rem;
   justify-content: center;
+  padding: 0.5rem;
   align-items: center;
   border-radius: 50%;
-  fill: #1da1f2;
+  color: #1da1f2;
   margin-left: 1.2rem;
   display: none;
 }
 
-.cross-icon {
-  width: 1.2rem;
+.search-clear-icon {
+  width: 1rem;
   fill: white;
 }
 
@@ -681,4 +704,129 @@ body {
 /* mobile nav */
 .mobile-nav-content {
   display: none;
+}
+
+/* from here all are basically css style for navigation menu in mobile */
+.mb-nav-top {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mb-account-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1.6rem;
+}
+
+.user-choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-user-detail {
+  margin: 0;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.social-info {
+  color: #555;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.followers,
+.following {
+  text-decoration: none;
+  color: #555;
+}
+
+.followers:active,
+.following:active {
+  text-decoration: underline;
+}
+.followers-count,
+.following-count {
+  color: #333;
+  font-weight: 700;
+}
+/* .label__general {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #555;
+} */
+.mb-nav-link {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(227, 236, 233);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.general--box {
+  margin-right: 1.8rem;
+}
+
+.mb-nav-ele-link {
+  color: #333;
+  font-weight: 400;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.mb-nav-ele-link:active {
+  background-color: #f7f7f7;
+}
+
+.mb-dropdown {
+  padding: 1rem 1.2rem;
+}
+
+.dropme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.dropme:hover,
+.dropme:active {
+  background-color: #f7f7f7;
+}
+
+.dropdown-icon {
+  width: 2.4rem;
+  transition: all 0.3s;
+}
+
+.drop-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-bottom: 1.6rem;
+}
+.drop {
+  color: #333;
+  padding: 1rem;
+}
+.drop-icon {
+  width: 2rem;
+}
+
+.drop-content {
+  font-weight: 700;
+  display: none;
+}
+.dropdown--active .dropdown-icon {
+  fill: #1da1f2;
+  transform: rotate(180deg);
+}
+
+.dropdown--active .drop-content {
+  display: block;
 }
