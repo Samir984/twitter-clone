@@ -6,8 +6,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* test */
+  /* outline: 1px solid green; */
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 html {
   font-size: 62.5%;
 }
@@ -25,32 +30,31 @@ body {
   grid-template-columns: 22fr 78fr;
   column-gap: 1.2rem;
   margin: 0 auto;
-  /* test */
-  /* background-color: green; */
-}
-
-.nav-section {
-  /*  */
 }
 
 .nav-sub-header1 {
+  margin-right: 1rem;
+}
+
+.nav-sub-header2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+.nav-sub-header3 {
+  margin-top: auto;
+}
 .nav-side-header {
-  /* test */
   position: sticky;
   top: 0;
-  /* test */
   height: 98vh;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
 }
 
 .twitter-logo-box {
   width: fit-content;
+
   border-radius: 50%;
 }
 
@@ -68,11 +72,11 @@ body {
 
 .label__general {
   font-family: "Lato";
+  color: #333;
   font-weight: 400;
   font-size: 2.4rem;
   display: inline;
   margin-right: 2rem;
-  letter-spacing: 0.6px;
 }
 
 .general--box {
@@ -87,6 +91,14 @@ body {
 .nav-ele-link {
   text-decoration: none;
   color: inherit;
+}
+.nav-ele-link--active .icon {
+  stroke: #000;
+  /* fill: red; */
+}
+
+.nav-ele-link--active .label__general {
+  font-weight: 700;
 }
 
 .icon {
@@ -149,24 +161,6 @@ body {
 
 /* ------------------ General css end------------------------ */
 
-/* ----------- ele-home ----------- */
-
-/* ------------- ele-explore --------------*/
-
-/* ----------- ele-notification ----------- */
-
-/* ----------- ele-message ----------- */
-
-/* ----------- ele-list ----------- */
-
-/* ----------- ele-bookmarks ----------- */
-
-/* ----------- ele-twitter blue ----------- */
-
-/* ----------- ele-profile ----------- */
-
-/* ----------- ele-more ----------- */
-
 /* ------------- ele tweet btn ----------- */
 
 .nav-tweet-btn {
@@ -174,7 +168,9 @@ body {
   margin-top: auto;
 }
 .tweet-btn {
-  width: 90%;
+  width: 94%;
+  display: flex;
+  justify-content: center;
   border-radius: 3rem;
   background-color: #1da1f2;
   padding: 1.6rem;
@@ -217,6 +213,7 @@ body {
 
 .user-pic {
   width: 5rem;
+  height: 5rem;
 }
 
 .login-user-detail,
@@ -250,27 +247,27 @@ body {
 
 .content-section {
   display: grid;
-  grid-template-columns: 62fr 38fr;
+  grid-template-columns: 73fr 38fr;
   column-gap: 2.4rem;
 }
 
 .content-bar {
+  font-family: "Lato";
   border-left: 1px solid rgb(239, 232, 232);
   border-right: #c6c4c4 1px solid;
 }
 
 .top-content {
-  font-family: "Lato";
-  background-color: rgba(255, 255, 255, 0.946);
-  padding-top: 1.6rem;
   position: sticky;
   top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.946);
+  padding-top: 1.6rem;
   flex-direction: column;
   border-bottom: solid 0.5px #d5d5d5;
   cursor: pointer;
 }
 .top-home {
-  font-family: "Lato";
   display: block;
   font-weight: 900;
   font-size: 2.4rem;
@@ -309,7 +306,8 @@ body {
 }
 
 .user-post-container {
-  /*  */
+  display: flex;
+  flex-direction: column;
 }
 .post {
   margin: 1.6rem 0 1rem 1rem;
@@ -320,7 +318,7 @@ body {
 }
 
 .profile-pic {
-  margin-top: -1rem;
+  margin-top: 1rem;
   border-radius: 50%;
 }
 
@@ -370,6 +368,7 @@ body {
   align-items: center;
 }
 .tweet-button-post {
+  border: none;
   padding: 1rem 2rem;
   background-color: #57b3ec;
   color: #f0f3f0;
@@ -380,9 +379,15 @@ body {
   height: max-content;
 }
 
+.tweet-button-post:hover,
+.tweet-button-post:active {
+  background-color: #0e9df6;
+}
 .post-example {
-  padding: 1.6rem;
+  padding: 1rem;
+  /* flex: 100%; */
   font-family: "Lato";
+  display: flex;
   border-bottom: #0001 1px solid;
   cursor: pointer;
 }
@@ -397,19 +402,37 @@ body {
   width: 5rem;
 }
 .name {
-  font-size: large;
+  font-size: 2rem;
   font-weight: bold;
 }
 .verified img {
   height: 2rem;
-  width: 2rem;
+  width: auto;
 }
-.username-post {
-  font-size: medium;
-}
+
 .actualpost-top {
   display: flex;
-  gap: 0.4rem;
+  align-items: center;
+}
+
+.user-account-link {
+  font-size: 1.8rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.username-post {
+  font-size: 1.4rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actualpost-text {
+  font-size: 1.6rem;
 }
 
 .post-3dot {
@@ -423,20 +446,25 @@ body {
 }
 
 .actual-post {
-  padding: 0px 0.6rem 0px 2rem;
+  padding: 0px 0.6rem 0px 1rem;
   display: flex;
   flex-direction: column;
 }
 .actualpost-text {
   margin-top: 4px;
-  font-size: large;
+  font-size: 1.8rem;
 }
 .actualpost-img {
+  display: flex;
+  flex-shrink: 2;
   margin-top: 2rem;
 }
 .actualpost-img img {
-  width: 50rem;
   height: auto;
+  width: 100%;
+
+  justify-content: center;
+
   border-radius: 20px;
 }
 
@@ -453,18 +481,18 @@ body {
 }
 .post-reaction {
   margin-top: 1rem;
-  width: 90%;
   display: flex;
   justify-content: space-between;
 }
 
-/* -----------content-sidebar section-------------- */
+/* ----------- explore sidebar section-------------- */
 .explore-sidebar {
   padding-bottom: 10rem;
 }
+
 .donot-touch {
   position: sticky;
-  z-index: 1000;
+  z-index: 100;
   top: 0;
   padding: 0.7rem 0;
   background-color: #fff;
@@ -475,6 +503,7 @@ body {
   background-color: #f0f3f0;
   border-radius: 8rem;
 }
+
 /* when search is active then this css is active */
 .search-container--active {
   background-color: #fff;
@@ -509,17 +538,17 @@ body {
 .search__clear {
   background-color: rgb(7, 124, 187);
   display: flex;
-  padding: 0.6rem;
   justify-content: center;
+  padding: 0.5rem;
   align-items: center;
   border-radius: 50%;
-  fill: #1da1f2;
+  color: #1da1f2;
   margin-left: 1.2rem;
   display: none;
 }
 
-.cross-icon {
-  width: 1.2rem;
+.search-clear-icon {
+  width: 1rem;
   fill: white;
 }
 
@@ -641,7 +670,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 10rem 2rem;
 }
 
 .footer-link {
@@ -662,4 +691,142 @@ body {
 
 .svg-search-path {
   display: none;
+}
+
+.mobile-nav-header {
+  display: none;
+}
+.mobile-nav-bottom,
+.mobile-tweet-btn {
+  display: none;
+}
+
+/* mobile nav */
+.mobile-nav-content {
+  display: none;
+}
+
+/* from here all are basically css style for navigation menu in mobile */
+.mb-nav-top {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mb-account-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1.6rem;
+}
+
+.user-choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-user-detail {
+  margin: 0;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.social-info {
+  color: #555;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.followers,
+.following {
+  text-decoration: none;
+  color: #555;
+}
+
+.followers:active,
+.following:active {
+  text-decoration: underline;
+}
+.followers-count,
+.following-count {
+  color: #333;
+  font-weight: 700;
+}
+/* .label__general {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #555;
+} */
+.mb-nav-link {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(227, 236, 233);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.general--box {
+  margin-right: 1.8rem;
+}
+
+.mb-nav-ele-link {
+  color: #333;
+  font-weight: 400;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.mb-nav-ele-link:active {
+  background-color: #f7f7f7;
+}
+
+.mb-dropdown {
+  padding: 1rem 1.2rem;
+}
+
+.dropme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.dropme:hover,
+.dropme:active {
+  background-color: #f7f7f7;
+}
+
+.dropdown-icon {
+  width: 2.4rem;
+  transition: all 0.3s;
+}
+
+.drop-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-bottom: 1.6rem;
+}
+.drop {
+  color: #333;
+  padding: 1rem;
+}
+.drop-icon {
+  width: 2rem;
+}
+
+.drop-content {
+  font-weight: 700;
+  display: none;
+}
+.dropdown--active .dropdown-icon {
+  fill: #1da1f2;
+  transform: rotate(180deg);
+}
+
+.dropdown--active .drop-content {
+  display: block;
 }
